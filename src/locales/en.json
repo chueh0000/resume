@@ -1,0 +1,159 @@
+{
+  "name": "Chueh Chung Hao",
+  "contact": {
+    "email": "b10902076@csie.ntu.edu.tw",
+    "phone": "(+886)971612015",
+    "github": {
+      "username": "chueh0000",
+      "link": "https://github.com/chueh0000"
+    },
+    "linkedin": {
+      "username": "Chung Hao Chueh",
+      "link": "https://www.linkedin.com/in/ChuehChungHao"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "ntu": {
+      "university": "National Taiwan University",
+      "degree": "5th Year, Computer Science and Information Engineering",
+      "date": "2021 - Expected June 2026",
+      "courses": [
+        "UNIX System Programming, Parallel Programming, Web Programming and Applications",
+        "Computer Architecture, Computer Networks, Operating Systems",
+        "Digital Systems Design and Laboratory, Computer System Laboratory, Practical Digital Electronics",
+        "Foundations of Artificial Intelligence, Introduction to Generative Artificial Intelligence",
+        "Engineering Design and Implementation for Sustainable Development",
+        "Introduction to Intelligent Vehicles"
+      ]
+    },
+    "highSchool": {
+      "school": "Taichung Municipal Taichung First Senior High School",
+      "subjects": "General Subjects",
+      "date": "2018 - 2021"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "list": [
+      "C",
+      "Python",
+      "Git",
+      "Unix",
+      "Verilog",
+      "CUDA C/C++",
+      "Javascript",
+      "Next.js",
+      "Django",
+      "Docker",
+      "Vercel"
+    ]
+  },
+  "certificates": {
+    "title": "Certificates",
+    "list": [
+      {
+        "name": "TOEIC 915",
+        "link": "https://example.com/toeic-915-certificate"
+      },
+      {
+        "name": "Fundamentals of Accelerated Computing with CUDA C/C++",
+        "link": "https://example.com/cuda-certificate"
+      }
+    ]
+  },
+  "internship": {
+    "title": "Internship",
+    "bigDataMobile": {
+      "company": "Big Data Mobile",
+      "role": "Summer Intern - Backend Web Developer",
+      "date": "2025.07 - 2025.08",
+      "tech": [
+        "Django",
+        "React",
+        "Docker",
+        "Git"
+      ],
+      "responsibilities": [
+        "Integrate Django Allauth to enable OAuth capabilities on the existing user login flow and database",
+        "Complete version upgrade for the backend API documentation, ensuring accuracy and compliance with new API endpoints"
+      ],
+      "link": "https://example.com/bigdatamobile-internship"
+    }
+  },
+  "groupProjectExperiences": {
+    "title": "Group Project Experiences",
+    "lineChatbot": {
+      "name": "Line Chatbot for Long-Term Care Facilities",
+      "subtitle": "Engineering Design and Implementation for Sustainable Development, National Taiwan University",
+      "date": "2025.03 - 2025.06",
+      "tech": [
+        "Next.js",
+        "Vercel",
+        "Neon (serverless PostgreSQL)"
+      ],
+      "description": [
+        "Collaborate on the full-stack development of a serverless Line chatbot for long-term care facilities.",
+        "Reduce communication costs and increase transparency for residents' family members",
+        "Integrated the Line Login feature for secure user authentication and deployed the entire application on Vercel"
+      ],
+      "link": "https://example.com/line-chatbot"
+    },
+    "brailleDisplay": {
+      "name": "Refreshable Braille Display",
+      "subtitle": "Practical Digital Electronics, National Taiwan University",
+      "date": "2025.03 - 2025.06",
+      "tech": [
+        "Javascript",
+        "ESP32",
+        "Circuit Design",
+        "3D Printing"
+      ],
+      "description": [
+        "Collaborate to create a refreshable braille display, serving as a proof-of-concept for a portable dynamic tactile map",
+        "Aim to improve navigation for people with visual disabilities, addressing critical limitations of existing technologies"
+      ],
+      "link": "https://example.com/braille-display"
+    },
+    "speechSummarization": {
+      "name": "AI-powered Realtime Speech Summarization",
+      "subtitle": "Microsoft Engage – Training Program for University Students with Disabilities",
+      "date": "2024.07 - 2024.08",
+      "tech": [
+        "Python",
+        "OpenAI Whisper",
+        "Gemini API",
+        "Streamlit"
+      ],
+      "description": [
+        "Collaborate to develop an AI-powered realtime speech summarization software in less than one month",
+        "OpenAI Whisper for speech-to-text conversion, Google Gemini for summarization, and Streamlit for the prototype"
+      ],
+      "link": "https://example.com/speech-summarization"
+    }
+  },
+  "extracurricularActivities": {
+    "title": "Extracurricular Activities",
+    "dsa": {
+      "name": "Disabled Students' Rights Association, National Taiwan University",
+      "role": "Treasurer → President",
+      "date": "2022 - 2024",
+      "responsibilities": [
+        "Provide community and peer support for students with disabilities",
+        "Assist the college in creating a friendly and accessible campus environment for students with disabilities",
+        "Actively collaborate with external partners and the NTNU Disability Students' Rights Association to jointly organize the first Youth Disability Rights Empowerment Camp"
+      ],
+      "link": "https://example.com/dsa"
+    },
+    "cyclingClub": {
+      "name": "Cycling Club, National Taiwan University",
+      "role": "General Affairs",
+      "date": "2022 - 2023",
+      "responsibilities": [
+        "Manage, repair, and maintain the club's bicycles",
+        "Organize riding events and lead members to complete multi-day long rides"
+      ],
+      "link": "https://example.com/cycling-club"
+    }
+  }
+}
