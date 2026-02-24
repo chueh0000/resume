@@ -2,34 +2,34 @@
   "name": "闕中豪 Chueh Chung Hao",
   "contact": {
     "email": "b10902076@csie.ntu.edu.tw",
-    "phone": "(+886)971612015",
+    "phone": "(+886) 971612015",
     "github": {
       "username": "chueh0000",
       "link": "https://github.com/chueh0000"
     },
     "linkedin": {
       "username": "Chung Hao Chueh",
-      "link": "https://www.linkedin.com/in/ChuehChungHao"
+      "link": "https://www.linkedin.com/in/chung-hao-chueh-7b939031a"
     }
   },
   "education": {
-    "title": "教育",
+    "title": "學歷",
     "ntu": {
       "university": "國立臺灣大學",
-      "degree": "資訊工程學系五年級",
-      "date": "2021 - 預計2026年6月",
+      "degree": "資訊工程學系 五年級",
+      "date": "2021 - 預計 2027.01 畢業",
       "courses": [
-        "UNIX系統程式設計, 平行程式設計, 網路程式設計與應用",
+        "UNIX系統程式設計, 平行程式設計, Web 程式設計與應用",
         "計算機結構, 計算機網路, 作業系統",
-        "數位系統設計與實作, 計算機系統實驗, 實用數位電子學",
-        "人工智慧基礎, 生成式人工智慧導論",
+        "數位系統與實驗, 計算機系統實驗, 數位電子學實務",
+        "人工智慧導論, 生成式人工智慧導論",
         "永續發展工程設計與實作",
-        "智慧車輛導論"
+        "智慧型汽車導論"
       ]
     },
     "highSchool": {
-      "school": "台中市立台中第一高級中學",
-      "subjects": "普通科目",
+      "school": "臺中市立臺中第一高級中等學校",
+      "subjects": "普通科",
       "date": "2018 - 2021"
     }
   },
@@ -54,19 +54,19 @@
     "list": [
       {
         "name": "TOEIC 915",
-        "link": "https://example.com/zh/toeic-915-certificate"
+        "link": "https://drive.google.com/file/d/1X7eG_tguqIx6uuRhJGKMhM_3jHBxowlo/view?usp=sharing"
       },
       {
-        "name": "CUDA C/C++加速運算基礎",
-        "link": "https://example.com/zh/cuda-certificate"
+        "name": "Fundamentals of Accelerated Computing with CUDA C/C++",
+        "link": "https://drive.google.com/file/d/1z_3ffMS_ZmWGaAzvtsHEDMDnBOYfjjCJ/view?usp=sharing"
       }
     ]
   },
   "internship": {
-    "title": "實習",
+    "title": "實習經驗",
     "bigDataMobile": {
-      "company": "Big Data Mobile",
-      "role": "暑期實習生 - 後端網頁開發工程師",
+      "company": "巨量移動科技",
+      "role": "暑期實習生 - 後端網頁開發",
       "date": "2025.07 - 2025.08",
       "tech": [
         "Django",
@@ -75,17 +75,17 @@
         "Git"
       ],
       "responsibilities": [
-        "整合Django Allauth以在現有使用者登錄流程和資料庫中啟用OAuth功能",
-        "完成後端API文件的版本升級，確保新API端點的準確性和符合性"
+        "整合 Django Allauth 模組，為既有的使用者資料庫與密碼登入流程增加 OAuth 登入功能",
+        "完成後端 API 文件版本升級，確保與最新的 API 端點的相容性與準確性"
       ],
-      "link": "https://example.com/zh/bigdatamobile-internship"
+      "link": ""
     }
   },
   "groupProjectExperiences": {
-    "title": "團體專案經驗",
+    "title": "團隊專案經驗",
     "lineChatbot": {
-      "name": "長照機構Line聊天機器人",
-      "subtitle": "國立臺灣大學永續發展工程設計與實作",
+      "name": "長照機構 Line 聊天機器人",
+      "subtitle": "國立臺灣大學 永續發展工程設計與實作",
       "date": "2025.03 - 2025.06",
       "tech": [
         "Next.js",
@@ -93,15 +93,15 @@
         "Neon (serverless PostgreSQL)"
       ],
       "description": [
-        "與長照機構的無伺服器Line聊天機器人進行全端開發。",
-        "降低溝通成本並增加居民家屬的透明度",
-        "整合Line登錄功能以實現安全使用者驗證並在Vercel上部署整個應用程式"
+        "與不同科系的組員共同合作開發 Line 聊天機器人，用於長照機構與住民家屬之間的溝通",
+        "降低溝通成本並提高長照機構透明度",
+        "使用 Next.js 和 serverless PostgreSQL 進行全端開發並整合 Line 登入功能，最終在 Vercel 上部署"
       ],
-      "link": "https://example.com/zh/line-chatbot"
+      "link": "https://github.com/chueh0000/ai-line-chatbot"
     },
     "brailleDisplay": {
-      "name": "可更新式點字顯示器",
-      "subtitle": "國立臺灣大學實用數位電子學",
+      "name": "點字顯示器模組",
+      "subtitle": "國立臺灣大學 數位電子學實務",
       "date": "2025.03 - 2025.06",
       "tech": [
         "Javascript",
@@ -110,14 +110,14 @@
         "3D Printing"
       ],
       "description": [
-        "合作開發可更新式點字顯示器，作為便攜式動態觸覺地圖的驗證概念",
+        "與不同科系的組員共同合作開發可更新式點字顯示器模組，作為可攜式動態觸覺地圖的概念驗證",
         "旨在改善視障人士的導航功能，解決現有技術的關鍵限制"
       ],
-      "link": "https://example.com/zh/braille-display"
+      "link": "https://github.com/chueh0000/Refreshable-Braille-Display"
     },
     "speechSummarization": {
-      "name": "AI驅動的即時語音摘要",
-      "subtitle": "Microsoft Engage – 肢體障礙大學生培訓計畫",
+      "name": "AI 即時語音摘要軟體",
+      "subtitle": "Microsoft Engage - 微軟身心障礙大學生培養計劃",
       "date": "2024.07 - 2024.08",
       "tech": [
         "Python",
@@ -126,34 +126,34 @@
         "Streamlit"
       ],
       "description": [
-        "合作開發一款在一個月內完成的AI驅動即時語音摘要軟體",
-        "使用OpenAI Whisper進行語音轉文字轉換，Google Gemini進行摘要，並使用Streamlit製作原型"
+        "從製作無障礙工具的想法出發，與不同學校科系的組員共同合作開發即時語音摘要軟體，在不到一個月的時間內完成原型",
+        "使用 OpenAI Whisper 將語音轉成文字，透過 Google Gemini 摘要，最終使用 Streamlit 合併功能、設計出原型"
       ],
-      "link": "https://example.com/zh/speech-summarization"
+      "link": "https://github.com/chueh0000/Realtime-Speech-Summary"
     }
   },
   "extracurricularActivities": {
-    "title": "課外活動",
+    "title": "社團經歷",
     "dsa": {
-      "name": "國立臺灣大學肢體障礙學生權益促進會",
-      "role": "財務長 → 會長",
+      "name": "國立臺灣大學 身心障礙學生權益促進會",
+      "role": "總務 → 社長",
       "date": "2022 - 2024",
       "responsibilities": [
-        "為身心障礙學生提供社區和同儕支持",
-        "協助學院為身心障礙學生創建友善無障礙的校園環境",
-        "與校外合作夥伴和國立臺灣師範大學肢體障礙學生權益促進會積極合作，共同組織首屆青年肢體障礙培力營"
+        "為身心障礙學生提供社群和同儕支持",
+        "協助校方為身心障礙學生打造友善且無障礙的校園環境",
+        "積極與校外夥伴及臺師大身心障礙學生促進會合作，共同舉辦首屆身心障礙青年人權培力營"
       ],
-      "link": "https://example.com/zh/dsa"
+      "link": "https://www.facebook.com/NTUDSRA/"
     },
     "cyclingClub": {
-      "name": "國立臺灣大學單車社",
-      "role": "總務",
+      "name": "國立臺灣大學 單車社",
+      "role": "庶務",
       "date": "2022 - 2023",
       "responsibilities": [
         "管理、維修和保養社團自行車",
-        "組織騎行活動並帶領社員完成多日長途騎行"
+        "舉辦多日騎乘活動，帶領社員完成「環島」、「北進武嶺」、「蘇花公路」、「花東縱谷」"
       ],
-      "link": "https://example.com/zh/cycling-club"
+      "link": "https://www.instagram.com/ntu_cycling_club"
     }
   }
 }
