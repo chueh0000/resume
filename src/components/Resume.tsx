@@ -2,6 +2,7 @@ import { Mail, Phone, Github, Linkedin, ExternalLink } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import profilePicture from "@/assets/pfp.png"
 import en from "../locales/en.json";
 import zh from "../locales/zh.json";
 import sharedData from "../locales/shared.json";
@@ -126,8 +127,8 @@ export default function Resume() {
           </div>
         </div>
         {/* Profile Picture Placeholder */}
-        <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
-          <img src="https://via.placeholder.com/96" alt="Profile" className="object-cover w-full h-full" />
+        <div className="w-24 h-35 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
+          <img src={profilePicture} alt="Profile" className="object-cover w-full h-full" />
         </div>
       </div>
 
