@@ -1,15 +1,15 @@
 {
-  "name": "Chueh Chung Hao",
+  "name": "Chung Hao Chueh",
   "contact": {
     "email": "b10902076@csie.ntu.edu.tw",
-    "phone": "(+886)971612015",
+    "phone": "(+886) 971612015",
     "github": {
       "username": "chueh0000",
       "link": "https://github.com/chueh0000"
     },
     "linkedin": {
       "username": "Chung Hao Chueh",
-      "link": "https://www.linkedin.com/in/ChuehChungHao"
+      "link": "https://www.linkedin.com/in/chung-hao-chueh-7b939031a"
     }
   },
   "education": {
@@ -17,7 +17,7 @@
     "ntu": {
       "university": "National Taiwan University",
       "degree": "5th Year, Computer Science and Information Engineering",
-      "date": "2021 - Expected June 2026",
+      "date": "2021 - Expected January 2027",
       "courses": [
         "UNIX System Programming, Parallel Programming, Web Programming and Applications",
         "Computer Architecture, Computer Networks, Operating Systems",
