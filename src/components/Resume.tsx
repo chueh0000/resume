@@ -35,7 +35,7 @@ export default function Resume() {
 
   // Function to render list items
   const renderList = (items: string[]) => (
-    <ul className="list-disc pl-5 text-gray-700 text-sm mt-2">
+    <ul className="list-disc pl-5 text-gray-700 text-xs">
       {items.map((item, index) => (
         <li key={index}>{item}</li>
       ))}
@@ -55,7 +55,7 @@ export default function Resume() {
 
   // Helper component for rendering titles that can be links
   const TitleWithLink = ({ item }: { item: LinkableItem }) => {
-    const titleClasses = "text-lg font-semibold text-gray-800";
+    const titleClasses = "text-base font-semibold text-gray-800";
     const linkClasses = "text-blue-600 hover:underline inline-flex items-center gap-1";
 
     if (item.link) {
@@ -70,9 +70,9 @@ export default function Resume() {
   };
 
   return (
-    <div className="container mx-auto p-6 md:p-10 lg:p-12 max-w-4xl bg-white shadow-lg rounded-lg my-8">
+    <div className="container mx-auto p-3 md:p-10 lg:p-12 max-w-4xl bg-white shadow-lg rounded-lg">
       {/* Language Switcher */}
-      <div className="flex justify-end gap-2 mb-4">
+      <div className="flex justify-end gap-2 mb-4 print:hidden">
         <Button
           onClick={() => setLang("en")}
           variant={lang === "en" ? "default" : "outline"}
@@ -90,9 +90,9 @@ export default function Resume() {
       </div>
 
       {/* Header Section */}
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex justify-between items-center mb-2">
         <div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-1">
+          <h1 className="text-2xl font-bold text-gray-900 mb-1">
             {activeLangData.name}
           </h1>
           <div className="text-gray-700 space-y-1">
@@ -134,13 +134,13 @@ export default function Resume() {
 
       {/* Education Section */}
       <section className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-4">
+        <h2 className="text-xl font-bold text-gray-800 border-b-2 border-gray-300 mb-2">
           {activeLangData.education.title}
         </h2>
-        <div className="mb-4">
+        <div className="mb-3">
           <div className="flex justify-between items-start">
             <div>
-              <h3 className="text-lg font-semibold text-gray-800">
+              <h3 className="text-base font-semibold text-gray-800">
                 {activeLangData.education.ntu.university}
               </h3>
               <p className="text-gray-700 text-sm">
@@ -155,7 +155,7 @@ export default function Resume() {
         </div>
         <div>
           <div className="flex justify-between items-start">
-            <h3 className="text-lg font-semibold text-gray-800">
+            <h3 className="text-base font-semibold text-gray-800">
               {activeLangData.education.highSchool.school}
             </h3>
             <span className="text-sm text-gray-600 text-right whitespace-nowrap">
@@ -168,10 +168,10 @@ export default function Resume() {
 
       {/* Skills Section */}
       <section className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-4">
+        <h2 className="text-xl font-bold text-gray-800 border-b-2 border-gray-300 mb-2">
           {activeLangData.skills.title}
         </h2>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-1">
           {activeLangData.skills.list.map((skill, index) => (
             <Badge key={index}>{skill}</Badge>
           ))}
@@ -180,7 +180,7 @@ export default function Resume() {
 
       {/* Certificates Section */}
       <section className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-4">
+        <h2 className="text-xl font-bold text-gray-800 border-b-2 border-gray-300 mb-2">
           {activeLangData.certificates.title}
         </h2>
         <div className="flex flex-wrap gap-2">
@@ -200,10 +200,10 @@ export default function Resume() {
 
       {/* Internship Section */}
       <section className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-4">
+        <h2 className="text-xl font-bold text-gray-800 border-b-2 border-gray-300 mb-2">
           {activeLangData.internship.title}
         </h2>
-        <div className="mb-4">
+        <div className="mb-3">
           <div className="flex justify-between items-start">
             <div>
               {/* Conditional link for internship company */}
@@ -223,10 +223,10 @@ export default function Resume() {
 
       {/* Group Project Experiences Section */}
       <section className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-4">
+        <h2 className="text-xl font-bold text-gray-800 border-b-2 border-gray-300 mb-2">
           {activeLangData.groupProjectExperiences.title}
         </h2>
-        <div className="mb-4">
+        <div className="mb-3">
           <div className="flex justify-between items-start">
             <div>
               {/* Conditional link for Line Chatbot project */}
@@ -243,7 +243,7 @@ export default function Resume() {
           {renderList(activeLangData.groupProjectExperiences.lineChatbot.description)}
         </div>
 
-        <div className="mb-4">
+        <div className="mb-3">
           <div className="flex justify-between items-start">
             <div>
               {/* Conditional link for Braille Display project */}
@@ -280,10 +280,10 @@ export default function Resume() {
 
       {/* Extracurricular Activities Section */}
       <section className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-4">
+        <h2 className="text-xl font-bold text-gray-800 border-b-2 border-gray-300 mb-2">
           {activeLangData.extracurricularActivities.title}
         </h2>
-        <div className="mb-4">
+        <div className="mb-3">
           <div className="flex justify-between items-start">
             <div>
               {/* Conditional link for DSA activity */}
