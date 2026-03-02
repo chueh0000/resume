@@ -1,17 +1,5 @@
 {
   "name": "Chung Hao Chueh",
-  "contact": {
-    "email": "b10902076@csie.ntu.edu.tw",
-    "phone": "(+886) 971612015",
-    "github": {
-      "username": "chueh0000",
-      "link": "https://github.com/chueh0000"
-    },
-    "linkedin": {
-      "username": "Chung Hao Chueh",
-      "link": "https://www.linkedin.com/in/chung-hao-chueh-7b939031a"
-    }
-  },
   "education": {
     "title": "Education",
     "ntu": {
@@ -34,33 +22,10 @@
     }
   },
   "skills": {
-    "title": "Skills",
-    "list": [
-      "C",
-      "Python",
-      "Git",
-      "Unix",
-      "Verilog",
-      "CUDA C/C++",
-      "Javascript",
-      "Next.js",
-      "Django",
-      "Docker",
-      "Vercel"
-    ]
+    "title": "Skills"
   },
   "certificates": {
-    "title": "Certificates",
-    "list": [
-      {
-        "name": "TOEIC 915",
-        "link": "https://drive.google.com/file/d/1X7eG_tguqIx6uuRhJGKMhM_3jHBxowlo/view?usp=sharing"
-      },
-      {
-        "name": "Fundamentals of Accelerated Computing with CUDA C/C++",
-        "link": "https://drive.google.com/file/d/1z_3ffMS_ZmWGaAzvtsHEDMDnBOYfjjCJ/view?usp=sharing"
-      }
-    ]
+    "title": "Certificates"
   },
   "internship": {
     "title": "Internship",

@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import en from "../locales/en.json";
 import zh from "../locales/zh.json";
+import sharedData from "../locales/shared.json";
 
 // Define a type for the common structure of internship, project, and activity items
 interface LinkableItem {
@@ -17,7 +18,19 @@ interface LinkableItem {
 
 export default function Resume() {
   const { lang, setLang } = useLanguage();
-  const activeLangData = lang === "en" ? en : zh;
+  const langData = lang === "en" ? en : zh;
+  const activeLangData = {
+    ...langData,
+    contact: sharedData.contact,
+    skills: {
+      title: langData.skills.title,
+      list: sharedData.skills.list,
+    },
+    certificates: {
+      title: langData.certificates.title,
+      list: sharedData.certificates.list,
+    },
+  };
 
   // Function to render list items
   const renderList = (items: string[]) => (
