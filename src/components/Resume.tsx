@@ -1,4 +1,5 @@
-import { Mail, Phone, Github, Linkedin, ExternalLink, ArrowUpRightIcon } from "lucide-react";
+import { Mail, Phone, ExternalLink, ArrowUpRightIcon } from "lucide-react";
+import { GitHubIcon, LinkedInIcon } from "./icons"
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import {
@@ -122,7 +123,7 @@ export default function Resume() {
               rel="noopener noreferrer"
               className="flex items-center text-sm text-blue-700 hover:underline print:text-xs print:text-gray-700"
             >
-              <Github className="w-4 h-4 mr-2 text-gray-600 print:w-3 print:h-3 print:mr-1" />
+							<GitHubIcon className="w-4 h-4 mr-2 text-gray-600 print:w-3 print:h-3 print:mr-1" />
               <span>{activeLangData.contact.github.username}</span>
             </a>
             {/* LinkedIn Link */}
@@ -132,7 +133,7 @@ export default function Resume() {
               rel="noopener noreferrer"
               className="flex items-center text-sm text-blue-700 hover:underline print:text-xs print:text-gray-700"
             >
-              <Linkedin className="w-4 h-4 mr-2 text-gray-600 print:w-3 print:h-3 print:mr-1" />
+							<LinkedInIcon className="w-4 h-4 mr-2 text-gray-600 print:w-3 print:h-3 print:mr-1" />
               <span>{activeLangData.contact.linkedin.username}</span>
             </a>
           </div>
