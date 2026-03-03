@@ -6,6 +6,7 @@ import {
   ButtonGroupSeparator,
 } from "./ui/button-group"
 import { useLanguage } from "@/contexts/LanguageContext";
+import { cn } from "@/lib/utils";
 import profilePicture from "@/assets/pfp.png"
 import en from "../locales/en.json";
 import zh from "../locales/zh.json";
@@ -47,10 +48,13 @@ export default function Resume() {
   );
 
   // Function to render tech badges
-  const renderTechBadges = (tech: string[]) => (
-    <div className="flex flex-wrap gap-2 mb-2">
+  const renderTechBadges = (tech: string[], printInline = false) => (
+    <div className={cn(
+      "flex flex-wrap gap-2 mb-2",
+      printInline ? "hidden print:flex print:mb-0 print:gap-1" : "print:hidden"
+    )}>
       {tech.map((item, index) => (
-        <Badge key={index} variant="secondary">
+        <Badge key={index} variant="secondary" className={cn(printInline && "print:text-[10px] print:px-1.5 print:py-0")}>
           {item}
         </Badge>
       ))}
@@ -59,14 +63,14 @@ export default function Resume() {
 
   // Helper component for rendering titles that can be links
   const TitleWithLink = ({ item }: { item: LinkableItem }) => {
-    const titleClasses = "text-base font-semibold text-gray-800";
+    const titleClasses = "text-base font-semibold text-gray-800 print:text-sm";
     const linkClasses = "text-blue-800 hover:underline inline-flex items-center gap-1";
 
     if (item.link) {
       return (
         <a href={item.link} target="_blank" rel="noopener noreferrer" className={linkClasses}>
           <h3 className={titleClasses}>{item.name}</h3>
-          <ExternalLink className="h-4 w-4" />
+          <ExternalLink className="h-3 w-3" />
         </a>
       );
     }
@@ -76,7 +80,7 @@ export default function Resume() {
   return (
     <div className="container mx-auto p-3 md:p-10 lg:p-12 max-w-4xl bg-white shadow-lg rounded-lg print:p-0 print:shadow-none print:max-w-none">
       {/* Language Switcher */}
-      <div className="flex justify-end gap-2 mb-4 print:hidden">
+      <div className="flex justify-end gap-2 mb-5 print:hidden">
 				<ButtonGroup>
 					<Button
 						onClick={() => setLang("en")}
@@ -134,13 +138,13 @@ export default function Resume() {
           </div>
         </div>
         {/* Profile Picture Placeholder */}
-        <div className="w-24 h-35 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden print:w-12 print:h-18">
+        <div className="w-24 h-35 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden print:w-12 print:h-16">
           <img src={profilePicture} alt="Profile" className="object-cover w-full h-full" />
         </div>
       </div>
 
       {/* Education Section */}
-      <section className="mb-4 print:mb-2">
+      <section className="mb-5 print:mb-2">
         <h2 className="text-xl font-bold text-gray-800 border-b-1 border-gray-300 mb-2 print:text-lg print:mb-1">
           {activeLangData.education.title}
         </h2>
@@ -174,7 +178,7 @@ export default function Resume() {
       </section>
 
       {/* Skills Section */}
-      <section className="mb-4 print:mb-2">
+      <section className="mb-5 print:mb-2">
         <h2 className="text-xl font-bold text-gray-800 border-b-1 border-gray-300 mb-2 print:text-lg print:mb-1">
           {activeLangData.skills.title}
         </h2>
@@ -188,7 +192,7 @@ export default function Resume() {
       </section>
 
       {/* Certificates Section */}
-      <section className="mb-4 print:mb-2">
+      <section className="mb-5 print:mb-2">
         <h2 className="text-xl font-bold text-gray-800 border-b-1 border-gray-300 mb-2 print:text-lg print:mb-1">
           {activeLangData.certificates.title}
         </h2>
@@ -209,40 +213,17 @@ export default function Resume() {
         </div>
       </section>
 
-      {/* Internship Section */}
-      <section className="mb-4 print:mb-2">
-        <h2 className="text-xl font-bold text-gray-800 border-b-1 border-gray-300 mb-2 print:text-lg print:mb-1">
-          {activeLangData.internship.title}
-        </h2>
-        <div className="mb-3 print:mb-1.5">
-          <div className="flex justify-between items-start">
-            <div>
-              {/* Conditional link for internship company */}
-              <TitleWithLink item={{ name: activeLangData.internship.bigDataMobile.company, link: activeLangData.internship.bigDataMobile.link }} />
-              <p className="text-gray-700 text-sm mb-1 print:text-xs print:mb-0.5">
-                {activeLangData.internship.bigDataMobile.role}
-              </p>
-            </div>
-            <span className="text-sm text-gray-600 text-right whitespace-nowrap print:text-xs">
-              {activeLangData.internship.bigDataMobile.date}
-            </span>
-          </div>
-          <div className="print:scale-90 print:origin-left">
-            {renderTechBadges(activeLangData.internship.bigDataMobile.tech)}
-          </div>
-          {renderList(activeLangData.internship.bigDataMobile.responsibilities)}
-        </div>
-      </section>
-
-      {/* Research Experience Section */}
-      <section className="mb-4 print:mb-2">
+			<section className="mb-5 print:mb-2">
         <h2 className="text-xl font-bold text-gray-800 border-b-1 border-gray-300 mb-2 print:text-lg print:mb-1">
           {activeLangData.researchExperience.title}
         </h2>
         <div className="mb-3 print:mb-1.5">
           <div className="flex justify-between items-start">
             <div>
-              <TitleWithLink item={{ name: activeLangData.researchExperience.wnes.name, link: activeLangData.researchExperience.wnes.link }} />
+              <div className="flex flex-wrap items-center gap-x-2">
+                <TitleWithLink item={{ name: activeLangData.researchExperience.wnes.name, link: activeLangData.researchExperience.wnes.link }} />
+                {renderTechBadges(activeLangData.researchExperience.wnes.tech, true)}
+              </div>
               <p className="text-gray-700 text-sm mb-1 print:text-xs print:mb-0.5">
                 {activeLangData.researchExperience.wnes.subtitle}
               </p>
@@ -251,23 +232,47 @@ export default function Resume() {
               {activeLangData.researchExperience.wnes.date}
             </span>
           </div>
-          <div className="print:scale-90 print:origin-left">
-            {renderTechBadges(activeLangData.researchExperience.wnes.tech)}
-          </div>
+          {renderTechBadges(activeLangData.researchExperience.wnes.tech)}
           {/* {renderList(activeLangData.researchExperience.wnes.description)} */}
         </div>
       </section>
 
-      {/* Group Project Experiences Section */}
-      <section className="mb-4 print:mb-2">
+      <section className="mb-5 print:mb-2">
         <h2 className="text-xl font-bold text-gray-800 border-b-1 border-gray-300 mb-2 print:text-lg print:mb-1">
-          {activeLangData.groupProjectExperiences.title}
+          {activeLangData.internship.title}
         </h2>
         <div className="mb-3 print:mb-1.5">
           <div className="flex justify-between items-start">
             <div>
-              {/* Conditional link for Line Chatbot project */}
-              <TitleWithLink item={{ name: activeLangData.groupProjectExperiences.lineChatbot.name, link: activeLangData.groupProjectExperiences.lineChatbot.link, subtitle: activeLangData.groupProjectExperiences.lineChatbot.subtitle }} />
+              {/* Conditional link for internship company */}
+              <div className="flex flex-wrap items-center gap-x-2">
+                <TitleWithLink item={{ name: activeLangData.internship.bigDataMobile.company, link: activeLangData.internship.bigDataMobile.link }} />
+                {renderTechBadges(activeLangData.internship.bigDataMobile.tech, true)}
+              </div>
+              <p className="text-gray-700 text-sm mb-1 print:text-xs print:mb-0.5">
+                {activeLangData.internship.bigDataMobile.role}
+              </p>
+            </div>
+            <span className="text-sm text-gray-600 text-right whitespace-nowrap print:text-xs">
+              {activeLangData.internship.bigDataMobile.date}
+            </span>
+          </div>
+          {renderTechBadges(activeLangData.internship.bigDataMobile.tech)}
+          {renderList(activeLangData.internship.bigDataMobile.responsibilities)}
+        </div>
+      </section>
+
+      <section className="mb-5 print:mb-2">
+        <h2 className="text-xl font-bold text-gray-800 border-b-1 border-gray-300 mb-2 print:text-lg print:mb-1">
+          {activeLangData.groupProjectExperiences.title}
+        </h2>
+        <div className="mb-3 print:mb-2">
+          <div className="flex justify-between items-start">
+            <div>
+              <div className="flex flex-wrap items-center gap-x-2">
+                <TitleWithLink item={{ name: activeLangData.groupProjectExperiences.lineChatbot.name, link: activeLangData.groupProjectExperiences.lineChatbot.link, subtitle: activeLangData.groupProjectExperiences.lineChatbot.subtitle }} />
+                {renderTechBadges(activeLangData.groupProjectExperiences.lineChatbot.tech, true)}
+              </div>
               <p className="text-gray-700 text-sm mb-1 print:text-xs print:mb-0.5">
                 {activeLangData.groupProjectExperiences.lineChatbot.subtitle}
               </p>
@@ -276,17 +281,17 @@ export default function Resume() {
               {activeLangData.groupProjectExperiences.lineChatbot.date}
             </span>
           </div>
-          <div className="print:scale-90 print:origin-left">
-            {renderTechBadges(activeLangData.groupProjectExperiences.lineChatbot.tech)}
-          </div>
+          {renderTechBadges(activeLangData.groupProjectExperiences.lineChatbot.tech)}
           {renderList(activeLangData.groupProjectExperiences.lineChatbot.description)}
         </div>
 
-        <div className="mb-3 print:mb-1.5">
+        <div className="mb-3 print:mb-2">
           <div className="flex justify-between items-start">
             <div>
-              {/* Conditional link for Braille Display project */}
-              <TitleWithLink item={{ name: activeLangData.groupProjectExperiences.brailleDisplay.name, link: activeLangData.groupProjectExperiences.brailleDisplay.link, subtitle: activeLangData.groupProjectExperiences.brailleDisplay.subtitle }} />
+              <div className="flex flex-wrap items-center gap-x-2">
+                <TitleWithLink item={{ name: activeLangData.groupProjectExperiences.brailleDisplay.name, link: activeLangData.groupProjectExperiences.brailleDisplay.link, subtitle: activeLangData.groupProjectExperiences.brailleDisplay.subtitle }} />
+                {renderTechBadges(activeLangData.groupProjectExperiences.brailleDisplay.tech, true)}
+              </div>
               <p className="text-gray-700 text-sm mb-1 print:text-xs print:mb-0.5">
                 {activeLangData.groupProjectExperiences.brailleDisplay.subtitle}
               </p>
@@ -295,17 +300,17 @@ export default function Resume() {
               {activeLangData.groupProjectExperiences.brailleDisplay.date}
             </span>
           </div>
-          <div className="print:scale-90 print:origin-left">
-            {renderTechBadges(activeLangData.groupProjectExperiences.brailleDisplay.tech)}
-          </div>
+          {renderTechBadges(activeLangData.groupProjectExperiences.brailleDisplay.tech)}
           {renderList(activeLangData.groupProjectExperiences.brailleDisplay.description)}
         </div>
 
-        <div className="print:mb-1.5">
+        <div className="print:mb-2">
           <div className="flex justify-between items-start">
             <div>
-              {/* Conditional link for Speech Summarization project */}
-              <TitleWithLink item={{ name: activeLangData.groupProjectExperiences.speechSummarization.name, link: activeLangData.groupProjectExperiences.speechSummarization.link, subtitle: activeLangData.groupProjectExperiences.speechSummarization.subtitle }} />
+              <div className="flex flex-wrap items-center gap-x-2">
+                <TitleWithLink item={{ name: activeLangData.groupProjectExperiences.speechSummarization.name, link: activeLangData.groupProjectExperiences.speechSummarization.link, subtitle: activeLangData.groupProjectExperiences.speechSummarization.subtitle }} />
+                {renderTechBadges(activeLangData.groupProjectExperiences.speechSummarization.tech, true)}
+              </div>
               <p className="text-gray-700 text-sm mb-1 print:text-xs print:mb-0.5">
                 {activeLangData.groupProjectExperiences.speechSummarization.subtitle}
               </p>
@@ -314,15 +319,13 @@ export default function Resume() {
               {activeLangData.groupProjectExperiences.speechSummarization.date}
             </span>
           </div>
-          <div className="print:scale-90 print:origin-left">
-            {renderTechBadges(activeLangData.groupProjectExperiences.speechSummarization.tech)}
-          </div>
+          {renderTechBadges(activeLangData.groupProjectExperiences.speechSummarization.tech)}
           {renderList(activeLangData.groupProjectExperiences.speechSummarization.description)}
         </div>
       </section>
 
       {/* Extracurricular Activities Section */}
-      <section className="mb-4 print:mb-2">
+      <section className="mb-5 print:mb-2">
         <h2 className="text-xl font-bold text-gray-800 border-b-1 border-gray-300 mb-2 print:text-lg print:mb-1">
           {activeLangData.extracurricularActivities.title}
         </h2>
