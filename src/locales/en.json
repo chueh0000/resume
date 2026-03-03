@@ -24,25 +24,6 @@
   "certificates": {
     "title": "Certificates"
   },
-  "internship": {
-    "title": "Internship",
-    "bigDataMobile": {
-      "company": "Big Data Mobile",
-      "role": "Summer Intern - Backend Web Developer",
-      "date": "2025.07 - 2025.08",
-      "tech": [
-        "Django",
-        "React",
-        "Docker",
-        "Git"
-      ],
-      "responsibilities": [
-        "Integrate Django Allauth to enable OAuth capabilities on the existing user login flow and database",
-        "Complete version upgrade for the backend API documentation, ensuring accuracy and compliance with new API endpoints"
-      ],
-      "link": ""
-    }
-  },
   "researchExperience": {
     "title": "Research Experience",
     "wnes": {
@@ -57,6 +38,25 @@
       ],
       "description": [
         "Research on NVIDIA Visual SLAM and Global Localization"
+      ],
+      "link": ""
+    }
+  },
+  "internship": {
+    "title": "Internship",
+    "bigDataMobile": {
+      "company": "Big Data Mobile",
+      "role": "Summer Intern - Backend Web Developer",
+      "date": "2025.07 - 2025.08",
+      "tech": [
+        "Django",
+        "React",
+        "Docker",
+        "Git"
+      ],
+      "responsibilities": [
+        "Integrate Django Allauth to enable SSO capabilities on the existing user login flow and database, improving user experience",
+        "Complete version upgrade for the backend API documentation, ensuring accuracy and compliance with new API endpoints"
       ],
       "link": ""
     }

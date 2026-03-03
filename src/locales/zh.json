@@ -24,25 +24,6 @@
   "certificates": {
     "title": "證照"
   },
-  "internship": {
-    "title": "實習經驗",
-    "bigDataMobile": {
-      "company": "巨量移動科技",
-      "role": "暑期實習生 - 後端網頁開發",
-      "date": "2025.07 - 2025.08",
-      "tech": [
-        "Django",
-        "React",
-        "Docker",
-        "Git"
-      ],
-      "responsibilities": [
-        "整合 Django Allauth 模組，為既有的使用者資料庫與密碼登入流程增加 OAuth 登入功能",
-        "完成後端 API 文件版本升級，確保與最新的 API 端點的相容性與準確性"
-      ],
-      "link": ""
-    }
-  },
   "researchExperience": {
     "title": "研究經驗",
     "wnes": {
@@ -57,6 +38,25 @@
       ],
       "description": [
         "研究 NVIDIA Visual SLAM 與 Global Localization 技術"
+      ],
+      "link": ""
+    }
+  },
+  "internship": {
+    "title": "實習經驗",
+    "bigDataMobile": {
+      "company": "巨量移動科技",
+      "role": "暑期實習生 - 後端網頁開發",
+      "date": "2025.07 - 2025.08",
+      "tech": [
+        "Django",
+        "React",
+        "Docker",
+        "Git"
+      ],
+      "responsibilities": [
+        "整合 Django Allauth 模組，為既有的使用者資料庫與密碼登入流程增加 SSO 登入功能，提升使用者體驗",
+        "完成後端 API 文件版本升級，確保與最新的 API 端點的相容性與準確性"
       ],
       "link": ""
     }
