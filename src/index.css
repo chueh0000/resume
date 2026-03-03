@@ -122,3 +122,20 @@
     @apply bg-background text-foreground;
     }
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+  body {
+    background-color: white !important;
+  }
+  .container {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+  }
+}

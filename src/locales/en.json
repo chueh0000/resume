@@ -8,10 +8,7 @@
       "date": "2021 - Expected January 2027",
       "courses": [
         "UNIX System Programming, Parallel Programming, Web Programming and Applications",
-        "Computer Architecture, Computer Networks, Operating Systems",
         "Digital Systems Design and Laboratory, Computer System Laboratory, Practical Digital Electronics",
-        "Foundations of Artificial Intelligence, Introduction to Generative Artificial Intelligence",
-        "Engineering Design and Implementation for Sustainable Development",
         "Introduction to Intelligent Vehicles"
       ]
     },
@@ -42,6 +39,24 @@
       "responsibilities": [
         "Integrate Django Allauth to enable OAuth capabilities on the existing user login flow and database",
         "Complete version upgrade for the backend API documentation, ensuring accuracy and compliance with new API endpoints"
+      ],
+      "link": ""
+    }
+  },
+  "researchExperience": {
+    "title": "Research Experience",
+    "wnes": {
+      "name": "Wireless Networking and Embedded Systems Lab",
+      "subtitle": "National Taiwan University",
+      "date": "2026.02 - Present",
+      "tech": [
+        "NVIDIA Visual SLAM",
+        "NVIDIA Visual Global Localization",
+        "ROS2",
+        "Autoware"
+      ],
+      "description": [
+        "Research on NVIDIA Visual SLAM and Global Localization"
       ],
       "link": ""
     }

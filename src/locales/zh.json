@@ -8,10 +8,7 @@
       "date": "2021 - 預計 2027.01 畢業",
       "courses": [
         "UNIX系統程式設計, 平行程式設計, Web 程式設計與應用",
-        "計算機結構, 計算機網路, 作業系統",
         "數位系統與實驗, 計算機系統實驗, 數位電子學實務",
-        "人工智慧導論, 生成式人工智慧導論",
-        "永續發展工程設計與實作",
         "智慧型汽車導論"
       ]
     },
@@ -42,6 +39,24 @@
       "responsibilities": [
         "整合 Django Allauth 模組，為既有的使用者資料庫與密碼登入流程增加 OAuth 登入功能",
         "完成後端 API 文件版本升級，確保與最新的 API 端點的相容性與準確性"
+      ],
+      "link": ""
+    }
+  },
+  "researchExperience": {
+    "title": "研究經驗",
+    "wnes": {
+      "name": "無線網路與嵌入式系統實驗室 (NEWS Lab)",
+      "subtitle": "國立臺灣大學",
+      "date": "2026.02 - 現在",
+      "tech": [
+        "NVIDIA Visual SLAM",
+        "NVIDIA Visual Global Localization",
+        "ROS2",
+        "Autoware"
+      ],
+      "description": [
+        "研究 NVIDIA Visual SLAM 與 Global Localization 技術"
       ],
       "link": ""
     }
