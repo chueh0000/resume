@@ -133,7 +133,7 @@ export default function Resume() {
       </div>
 
       {/* Education Section */}
-      <section className="mb-6">
+      <section className="mb-4">
         <h2 className="text-xl font-bold text-gray-800 border-b-2 border-gray-300 mb-2">
           {activeLangData.education.title}
         </h2>
@@ -167,7 +167,7 @@ export default function Resume() {
       </section>
 
       {/* Skills Section */}
-      <section className="mb-6">
+      <section className="mb-4">
         <h2 className="text-xl font-bold text-gray-800 border-b-2 border-gray-300 mb-2">
           {activeLangData.skills.title}
         </h2>
@@ -179,7 +179,7 @@ export default function Resume() {
       </section>
 
       {/* Certificates Section */}
-      <section className="mb-6">
+      <section className="mb-4">
         <h2 className="text-xl font-bold text-gray-800 border-b-2 border-gray-300 mb-2">
           {activeLangData.certificates.title}
         </h2>
@@ -199,7 +199,7 @@ export default function Resume() {
       </section>
 
       {/* Internship Section */}
-      <section className="mb-6">
+      <section className="mb-4">
         <h2 className="text-xl font-bold text-gray-800 border-b-2 border-gray-300 mb-2">
           {activeLangData.internship.title}
         </h2>
@@ -222,7 +222,7 @@ export default function Resume() {
       </section>
 
       {/* Group Project Experiences Section */}
-      <section className="mb-6">
+      <section className="mb-4">
         <h2 className="text-xl font-bold text-gray-800 border-b-2 border-gray-300 mb-2">
           {activeLangData.groupProjectExperiences.title}
         </h2>
@@ -279,7 +279,7 @@ export default function Resume() {
       </section>
 
       {/* Extracurricular Activities Section */}
-      <section className="mb-6">
+      <section className="mb-4">
         <h2 className="text-xl font-bold text-gray-800 border-b-2 border-gray-300 mb-2">
           {activeLangData.extracurricularActivities.title}
         </h2>
