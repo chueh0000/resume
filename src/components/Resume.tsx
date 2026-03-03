@@ -1,4 +1,4 @@
-import { Mail, Phone, ExternalLink, ArrowUpRightIcon } from "lucide-react";
+import { Mail, Phone, ExternalLink } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "./icons"
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
@@ -207,7 +207,7 @@ export default function Resume() {
 								rel="noopener noreferrer"
 								className="block"
 							>
-								{cert.name} <ArrowUpRightIcon data-icon="inline-end" className="print:w-2 print:h-2" />
+								{cert.name} <ExternalLink data-icon="inline-end" className="print:w-2 print:h-2" />
               </a>
             </Badge>
           ))}
