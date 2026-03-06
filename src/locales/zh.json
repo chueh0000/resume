@@ -7,9 +7,10 @@
       "degree": "資訊工程學系 五年級",
       "date": "2021 - 預計 2027.01 畢業",
       "courses": [
-        "UNIX系統程式設計, 平行程式設計, Web 程式設計與應用",
+        "UNIX系統程式設計, 平行程式設計, 業界視角下的資訊安全",
         "數位系統與實驗, 計算機系統實驗, 數位電子學實務",
-        "智慧型汽車導論"
+        "Web 程式設計與應用, 雲原生應用程式開發",
+        "智慧型汽車導論, 智慧車輛設計與實務"
       ]
     },
     "highSchool": {
@@ -27,8 +28,8 @@
   "researchExperience": {
     "title": "研究經驗",
     "wnes": {
-      "name": "無線網路與嵌入式系統實驗室 (NEWS Lab)",
-      "subtitle": "國立臺灣大學",
+      "name": "國立臺灣大學 無線網路與嵌入式系統實驗室 (NEWS Lab)",
+      "subtitle": "Smart Perception 團隊",
       "date": "2026.02 - 現在",
       "tech": [
         "NVIDIA Visual SLAM",

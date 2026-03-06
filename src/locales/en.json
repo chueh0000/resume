@@ -7,9 +7,10 @@
       "degree": "5th Year, Computer Science and Information Engineering",
       "date": "2021 - Expected January 2027",
       "courses": [
-        "UNIX System Programming, Parallel Programming, Web Programming and Applications",
+        "UNIX System Programming, Parallel Programming, Cybersecurity from an Industry's Perspective",
         "Digital Systems Design and Laboratory, Computer System Laboratory, Practical Digital Electronics",
-        "Introduction to Intelligent Vehicles"
+        "Web Programming and Applications, Cloud Native Application Development",
+        "Introduction to Intelligent Vehicles, Design and Practice of Intelligent Vehicles"
       ]
     },
     "highSchool": {
@@ -27,8 +28,8 @@
   "researchExperience": {
     "title": "Research Experience",
     "wnes": {
-      "name": "Wireless Networking and Embedded Systems Lab",
-      "subtitle": "National Taiwan University",
+      "name": "Wireless Networking and Embedded Systems Lab, National Taiwan University",
+      "subtitle": "Smart Perception Team",
       "date": "2026.02 - Present",
       "tech": [
         "NVIDIA Visual SLAM",
