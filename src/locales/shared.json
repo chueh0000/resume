@@ -22,7 +22,8 @@
       "Next.js",
       "Django",
       "Docker",
-      "Vercel"
+      "Matlab",
+      "Simulink"
     ]
   },
   "certificates": {
@@ -32,8 +33,12 @@
         "link": "https://drive.google.com/file/d/1X7eG_tguqIx6uuRhJGKMhM_3jHBxowlo/view?usp=sharing"
       },
       {
+        "name": "Getting Started with AI on Jetson Nano",
+        "link": "https://drive.google.com/file/d/1-uDXzouui_Ft2Mv2zf_ubR7D1e3ikMEF/view?usp=sharing"
+      },
+      {
         "name": "Fundamentals of Accelerated Computing with CUDA C/C++",
-        "link": "https://drive.google.com/file/d/1z_3ffMS_ZmWGaAzvtsHEDMDnBOYfjjCJ/view?usp=sharing"
+        "link": "https://drive.google.com/file/d/1tsKrOmGxmvtdLas-OsnAGtuepKzO-dGI/view?usp=sharing"
       }
     ]
   }
