@@ -7,7 +7,7 @@
       "degree": "資訊工程學系 五年級",
       "date": "2021 - 預計 2027.01 畢業",
       "courses": [
-        "UNIX系統程式設計, 平行程式設計, 業界視角下的資訊安全",
+        "UNIX 系統程式設計, 平行程式設計, 業界視角下的資訊安全",
         "數位系統與實驗, 計算機系統實驗, 數位電子學實務",
         "Web 程式設計與應用, 雲原生應用程式開發",
         "智慧型汽車導論, 智慧車輛設計與實務, 車輛控制與駕駛輔助系統"
@@ -32,15 +32,17 @@
       "subtitle": "Smart Perception 團隊",
       "date": "2026.02 - 現在",
       "tech": [
-        "NVIDIA Visual SLAM",
-        "NVIDIA Visual Global Localization",
+        "NVIDIA Omniverse",
+        "NVIDIA Isaac",
         "ROS2",
-        "Autoware"
+        "Autoware",
+        "Carla"
       ],
       "description": [
-        "研究 NVIDIA Visual SLAM 與 Global Localization 技術"
+        "研究 NVIDIA Isaac Sim、Visual SLAM 與 Global Localization 技術",
+        "研究 NVIDIA-Carla 整合技術 (SimReady, Nurec, Cosmos Transfer)"
       ],
-      "link": ""
+      "link": "https://github.com/NEWSLabNTU"
     }
   },
   "internship": {
@@ -68,20 +70,37 @@
     "title": "團隊專案經驗",
     "items": [
       {
-        "name": "長照機構 Line 聊天機器人",
-        "subtitle": "國立臺灣大學 永續發展工程設計與實作",
-        "date": "2025.03 - 2025.06",
+        "name": "資產管理系統",
+        "subtitle": "國立臺灣大學 雲原生應用程式開發",
+        "date": "2026.03 - 現在",
         "tech": [
-          "Next.js",
-          "Vercel",
-          "Neon (serverless PostgreSQL)"
+          "React",
+          "FastAPI",
+          "Docker",
+          "Vitest",
+          "Git",
+          "Continuous Integration"
         ],
         "description": [
-          "與不同科系的組員共同合作開發 Line 聊天機器人，用於長照機構與住民家屬之間的溝通",
-          "降低溝通成本並提高長照機構透明度",
-          "使用 Next.js 和 serverless PostgreSQL 進行全端開發並整合 Line 登入功能，最終在 Vercel 上部署"
+          "合作開發雲原生資產管理系統，用於管理資產與維修流程",
+          "實作管理員與持有者的角色感知路由及儀表板",
+          "建構支援多國語言 (i18n) 的前端架構"
         ],
-        "link": "https://github.com/chueh0000/ai-line-chatbot"
+        "link": "https://github.com/Joshua0209/Asset-Management-System"
+      },
+      {
+        "name": "電動 SUV 角錐跟隨自駕系統",
+        "subtitle": "國立臺灣大學 智慧車輛設計與實務",
+        "date": "2026.03 - 現在",
+        "tech": [
+          "Python",
+          "ROS2"
+        ],
+        "description": [
+          "為電動 SUV 開發完整的 ROS 2 軟體架構，透過 3D 感知、路徑規劃與車輛控制實現角錐跟隨",
+          "整合路徑規劃模組與 Formula Student Driverless 模擬器，在硬體部署前驗證控制與規劃邏輯"
+        ],
+        "link": "https://github.com/chueh0000/cone_follower_ws"
       },
       {
         "name": "點字顯示器模組",
@@ -94,26 +113,10 @@
           "3D Printing"
         ],
         "description": [
-          "與不同科系的組員共同合作開發可更新式點字顯示器模組，作為可攜式動態觸覺地圖的概念驗證",
+          "合作開發可更新式點字顯示器模組，作為可攜式動態觸覺地圖的概念驗證",
           "旨在改善視障人士的導航功能，解決現有技術的關鍵限制"
         ],
         "link": "https://github.com/chueh0000/Refreshable-Braille-Display"
-      },
-      {
-        "name": "AI 即時語音摘要軟體",
-        "subtitle": "Microsoft Engage - 微軟身心障礙大學生培養計劃",
-        "date": "2024.07 - 2024.08",
-        "tech": [
-          "Python",
-          "OpenAI Whisper",
-          "Gemini API",
-          "Streamlit"
-        ],
-        "description": [
-          "從製作無障礙工具的想法出發，與不同學校科系的組員共同合作開發即時語音摘要軟體，在不到一個月的時間內完成原型",
-          "使用 OpenAI Whisper 將語音轉成文字，透過 Google Gemini 摘要，最終使用 Streamlit 合併功能、設計出原型"
-        ],
-        "link": "https://github.com/chueh0000/Realtime-Speech-Summary"
       }
     ]
   },
@@ -127,7 +130,7 @@
         "responsibilities": [
           "為身心障礙學生提供社群和同儕支持",
           "協助校方為身心障礙學生打造友善且無障礙的校園環境",
-          "積極與校外夥伴及臺師大身心障礙學生促進會合作，共同舉辦首屆身心障礙青年人權培力營"
+          "與校外夥伴及臺師大身心障礙學生促進會合作，舉辦首屆身心障礙青年人權培力營"
         ],
         "link": "https://www.facebook.com/NTUDSRA/"
       },
@@ -137,7 +140,7 @@
         "date": "2022 - 2023",
         "responsibilities": [
           "管理、維修和保養社團自行車",
-          "舉辦多日騎乘活動，帶領社員完成「環島」、「北進武嶺」、「蘇花公路」、「花東縱谷」"
+          "舉辦騎乘活動，帶領社員完成多日長途騎乘"
         ],
         "link": "https://www.instagram.com/ntu_cycling_club"
       }

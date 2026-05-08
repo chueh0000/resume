@@ -234,7 +234,7 @@ export default function Resume() {
             </span>
           </div>
           {renderTechBadges(activeLangData.researchExperience.wnes.tech)}
-          {/* {renderList(activeLangData.researchExperience.wnes.description)} */}
+          {renderList(activeLangData.researchExperience.wnes.description)}
         </div>
       </section>
 

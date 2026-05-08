@@ -23,7 +23,8 @@
       "Django",
       "Docker",
       "Matlab",
-      "Simulink"
+      "Simulink",
+      "ROS2"
     ]
   },
   "certificates": {

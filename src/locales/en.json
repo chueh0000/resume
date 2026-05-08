@@ -7,8 +7,8 @@
       "degree": "5th Year, Computer Science and Information Engineering",
       "date": "2021 - Expected January 2027",
       "courses": [
-        "UNIX System Programming, Parallel Programming, Cybersecurity from an Industry's Perspective",
-        "Digital Systems Design and Laboratory, Computer System Laboratory, Practical Digital Electronics",
+        "UNIX System Programming, Parallel Programming, Cybersecurity from an Industry Perspective",
+        "Digital Systems Design and Laboratory, Computer Systems Laboratory, Practical Digital Electronics",
         "Web Programming and Applications, Cloud Native Application Development",
         "Introduction to Intelligent Vehicles, Design and Practice of Intelligent Vehicles, Vehicle Control and Driver Assist Systems"
       ]
@@ -32,15 +32,17 @@
       "subtitle": "Smart Perception Team",
       "date": "2026.02 - Present",
       "tech": [
-        "NVIDIA Visual SLAM",
-        "NVIDIA Visual Global Localization",
+        "NVIDIA Omniverse",
+        "NVIDIA Isaac",
         "ROS2",
-        "Autoware"
+        "Autoware",
+        "Carla"
       ],
       "description": [
-        "Research on NVIDIA Visual SLAM and Global Localization"
+        "Researched NVIDIA Isaac Sim, Visual SLAM, and Global Localization",
+        "Researched NVIDIA-Carla integration (SimReady, Nurec, Cosmos Transfer)"
       ],
-      "link": ""
+      "link": "https://github.com/NEWSLabNTU"
     }
   },
   "internship": {
@@ -57,8 +59,8 @@
           "Git"
         ],
         "responsibilities": [
-          "Integrate Django Allauth to enable SSO capabilities on the existing user login flow and database, improving user experience",
-          "Complete version upgrade for the backend API documentation, ensuring accuracy and compliance with new API endpoints"
+          "Integrated Django Allauth to enable SSO capabilities on the existing user login flow and database, improving user experience",
+          "Completed version upgrade for the backend API documentation, ensuring accuracy and compliance with new API endpoints"
         ],
         "link": ""
       }
@@ -68,20 +70,37 @@
     "title": "Group Project Experiences",
     "items": [
       {
-        "name": "Line Chatbot for Long-Term Care Facilities",
-        "subtitle": "Engineering Design and Implementation for Sustainable Development, National Taiwan University",
-        "date": "2025.03 - 2025.06",
+        "name": "Asset Management System",
+        "subtitle": "Cloud Native Application Development, National Taiwan University",
+        "date": "2026.03 - Present",
         "tech": [
-          "Next.js",
-          "Vercel",
-          "Neon (serverless PostgreSQL)"
+          "React",
+          "FastAPI",
+          "Docker",
+          "Vitest",
+          "Git",
+          "Continuous Integration"
         ],
         "description": [
-          "Collaborate on the full-stack development of a serverless Line chatbot for long-term care facilities.",
-          "Reduce communication costs and increase transparency for residents' family members",
-          "Integrated the Line Login feature for secure user authentication and deployed the entire application on Vercel"
+          "Collaborated on the development of a cloud-native asset management system for managing assets and maintenance workflows",
+          "Implemented role-aware routing and dashboards for managers and holders",
+          "Architected the frontend for multi-language support (i18n)"
         ],
-        "link": "https://github.com/chueh0000/ai-line-chatbot"
+        "link": "https://github.com/Joshua0209/Asset-Management-System"
+      },
+      {
+        "name": "Autonomous Cone-Following System for Electric SUV",
+        "subtitle": "Design and Practice of Intelligent Vehicles, National Taiwan University",
+        "date": "2026.03 - Present",
+        "tech": [
+          "Python",
+          "ROS2"
+        ],
+        "description": [
+          "Engineered a complete ROS 2 software stack for an electric SUV, enabling autonomous cone-following through a pipeline of 3D perception, path planning, and vehicle control",
+          "Integrated the navigation stack with the Formula Student Driverless Simulator to verify control and planning logic prior to hardware deployment"
+        ],
+        "link": "https://github.com/chueh0000/cone_follower_ws"
       },
       {
         "name": "Refreshable Braille Display",
@@ -94,26 +113,10 @@
           "3D Printing"
         ],
         "description": [
-          "Collaborate to create a refreshable braille display, serving as a proof-of-concept for a portable dynamic tactile map",
-          "Aim to improve navigation for people with visual disabilities, addressing critical limitations of existing technologies"
+          "Collaborated to create a refreshable braille display, serving as a proof-of-concept for a portable dynamic tactile map",
+          "Aimed to improve navigation for people with visual disabilities, addressing critical limitations of existing technologies"
         ],
         "link": "https://github.com/chueh0000/Refreshable-Braille-Display"
-      },
-      {
-        "name": "AI-powered Realtime Speech Summarization",
-        "subtitle": "Microsoft Engage – Training Program for University Students with Disabilities",
-        "date": "2024.07 - 2024.08",
-        "tech": [
-          "Python",
-          "OpenAI Whisper",
-          "Gemini API",
-          "Streamlit"
-        ],
-        "description": [
-          "Collaborate to develop an AI-powered realtime speech summarization software in less than one month",
-          "OpenAI Whisper for speech-to-text conversion, Google Gemini for summarization, and Streamlit for the prototype"
-        ],
-        "link": "https://github.com/chueh0000/Realtime-Speech-Summary"
       }
     ]
   },
@@ -125,9 +128,9 @@
         "role": "Treasurer → President",
         "date": "2022 - 2024",
         "responsibilities": [
-          "Provide community and peer support for students with disabilities",
-          "Assist the college in creating a friendly and accessible campus environment for students with disabilities",
-          "Actively collaborate with external partners and the NTNU Disability Students' Rights Association to jointly organize the first Youth Disability Rights Empowerment Camp"
+          "Provided community and peer support for students with disabilities",
+          "Assisted the university in creating a friendly and accessible campus environment for students with disabilities",
+          "Collaborated with external partners and the NTNU Disabled Students' Rights Association to organize the first Youth Disability Rights Empowerment Camp"
         ],
         "link": "https://www.facebook.com/NTUDSRA/"
       },
@@ -136,8 +139,8 @@
         "role": "General Affairs",
         "date": "2022 - 2023",
         "responsibilities": [
-          "Manage, repair, and maintain the club's bicycles",
-          "Organize riding events and lead members to complete multi-day long rides"
+          "Managed, repaired, and maintained the club's bicycles",
+          "Organized cycling events and led members to complete multi-day long rides"
         ],
         "link": "https://www.instagram.com/ntu_cycling_club"
       }
