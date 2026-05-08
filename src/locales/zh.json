@@ -45,96 +45,102 @@
   },
   "internship": {
     "title": "實習經驗",
-    "bigDataMobile": {
-      "company": "巨量移動科技",
-      "role": "暑期實習生 - 後端網頁開發",
-      "date": "2025.07 - 2025.08",
-      "tech": [
-        "Django",
-        "React",
-        "Docker",
-        "Git"
-      ],
-      "responsibilities": [
-        "整合 Django Allauth 模組，為既有的使用者資料庫與密碼登入流程增加 SSO 登入功能，提升使用者體驗",
-        "完成後端 API 文件版本升級，確保與最新的 API 端點的相容性與準確性"
-      ],
-      "link": ""
-    }
+    "items": [
+      {
+        "company": "巨量移動科技",
+        "role": "暑期實習生 - 後端網頁開發",
+        "date": "2025.07 - 2025.08",
+        "tech": [
+          "Django",
+          "React",
+          "Docker",
+          "Git"
+        ],
+        "responsibilities": [
+          "整合 Django Allauth 模組，為既有的使用者資料庫與密碼登入流程增加 SSO 登入功能，提升使用者體驗",
+          "完成後端 API 文件版本升級，確保與最新的 API 端點的相容性與準確性"
+        ],
+        "link": ""
+      }
+    ]
   },
   "groupProjectExperiences": {
     "title": "團隊專案經驗",
-    "lineChatbot": {
-      "name": "長照機構 Line 聊天機器人",
-      "subtitle": "國立臺灣大學 永續發展工程設計與實作",
-      "date": "2025.03 - 2025.06",
-      "tech": [
-        "Next.js",
-        "Vercel",
-        "Neon (serverless PostgreSQL)"
-      ],
-      "description": [
-        "與不同科系的組員共同合作開發 Line 聊天機器人，用於長照機構與住民家屬之間的溝通",
-        "降低溝通成本並提高長照機構透明度",
-        "使用 Next.js 和 serverless PostgreSQL 進行全端開發並整合 Line 登入功能，最終在 Vercel 上部署"
-      ],
-      "link": "https://github.com/chueh0000/ai-line-chatbot"
-    },
-    "brailleDisplay": {
-      "name": "點字顯示器模組",
-      "subtitle": "國立臺灣大學 數位電子學實務",
-      "date": "2025.03 - 2025.06",
-      "tech": [
-        "Javascript",
-        "ESP32",
-        "Circuit Design",
-        "3D Printing"
-      ],
-      "description": [
-        "與不同科系的組員共同合作開發可更新式點字顯示器模組，作為可攜式動態觸覺地圖的概念驗證",
-        "旨在改善視障人士的導航功能，解決現有技術的關鍵限制"
-      ],
-      "link": "https://github.com/chueh0000/Refreshable-Braille-Display"
-    },
-    "speechSummarization": {
-      "name": "AI 即時語音摘要軟體",
-      "subtitle": "Microsoft Engage - 微軟身心障礙大學生培養計劃",
-      "date": "2024.07 - 2024.08",
-      "tech": [
-        "Python",
-        "OpenAI Whisper",
-        "Gemini API",
-        "Streamlit"
-      ],
-      "description": [
-        "從製作無障礙工具的想法出發，與不同學校科系的組員共同合作開發即時語音摘要軟體，在不到一個月的時間內完成原型",
-        "使用 OpenAI Whisper 將語音轉成文字，透過 Google Gemini 摘要，最終使用 Streamlit 合併功能、設計出原型"
-      ],
-      "link": "https://github.com/chueh0000/Realtime-Speech-Summary"
-    }
+    "items": [
+      {
+        "name": "長照機構 Line 聊天機器人",
+        "subtitle": "國立臺灣大學 永續發展工程設計與實作",
+        "date": "2025.03 - 2025.06",
+        "tech": [
+          "Next.js",
+          "Vercel",
+          "Neon (serverless PostgreSQL)"
+        ],
+        "description": [
+          "與不同科系的組員共同合作開發 Line 聊天機器人，用於長照機構與住民家屬之間的溝通",
+          "降低溝通成本並提高長照機構透明度",
+          "使用 Next.js 和 serverless PostgreSQL 進行全端開發並整合 Line 登入功能，最終在 Vercel 上部署"
+        ],
+        "link": "https://github.com/chueh0000/ai-line-chatbot"
+      },
+      {
+        "name": "點字顯示器模組",
+        "subtitle": "國立臺灣大學 數位電子學實務",
+        "date": "2025.03 - 2025.06",
+        "tech": [
+          "Javascript",
+          "ESP32",
+          "Circuit Design",
+          "3D Printing"
+        ],
+        "description": [
+          "與不同科系的組員共同合作開發可更新式點字顯示器模組，作為可攜式動態觸覺地圖的概念驗證",
+          "旨在改善視障人士的導航功能，解決現有技術的關鍵限制"
+        ],
+        "link": "https://github.com/chueh0000/Refreshable-Braille-Display"
+      },
+      {
+        "name": "AI 即時語音摘要軟體",
+        "subtitle": "Microsoft Engage - 微軟身心障礙大學生培養計劃",
+        "date": "2024.07 - 2024.08",
+        "tech": [
+          "Python",
+          "OpenAI Whisper",
+          "Gemini API",
+          "Streamlit"
+        ],
+        "description": [
+          "從製作無障礙工具的想法出發，與不同學校科系的組員共同合作開發即時語音摘要軟體，在不到一個月的時間內完成原型",
+          "使用 OpenAI Whisper 將語音轉成文字，透過 Google Gemini 摘要，最終使用 Streamlit 合併功能、設計出原型"
+        ],
+        "link": "https://github.com/chueh0000/Realtime-Speech-Summary"
+      }
+    ]
   },
   "extracurricularActivities": {
     "title": "社團經歷",
-    "dsa": {
-      "name": "國立臺灣大學 身心障礙學生權益促進會",
-      "role": "總務 → 社長",
-      "date": "2022 - 2024",
-      "responsibilities": [
-        "為身心障礙學生提供社群和同儕支持",
-        "協助校方為身心障礙學生打造友善且無障礙的校園環境",
-        "積極與校外夥伴及臺師大身心障礙學生促進會合作，共同舉辦首屆身心障礙青年人權培力營"
-      ],
-      "link": "https://www.facebook.com/NTUDSRA/"
-    },
-    "cyclingClub": {
-      "name": "國立臺灣大學 單車社",
-      "role": "庶務",
-      "date": "2022 - 2023",
-      "responsibilities": [
-        "管理、維修和保養社團自行車",
-        "舉辦多日騎乘活動，帶領社員完成「環島」、「北進武嶺」、「蘇花公路」、「花東縱谷」"
-      ],
-      "link": "https://www.instagram.com/ntu_cycling_club"
-    }
+    "items": [
+      {
+        "name": "國立臺灣大學 身心障礙學生權益促進會",
+        "role": "總務 → 社長",
+        "date": "2022 - 2024",
+        "responsibilities": [
+          "為身心障礙學生提供社群和同儕支持",
+          "協助校方為身心障礙學生打造友善且無障礙的校園環境",
+          "積極與校外夥伴及臺師大身心障礙學生促進會合作，共同舉辦首屆身心障礙青年人權培力營"
+        ],
+        "link": "https://www.facebook.com/NTUDSRA/"
+      },
+      {
+        "name": "國立臺灣大學 單車社",
+        "role": "庶務",
+        "date": "2022 - 2023",
+        "responsibilities": [
+          "管理、維修和保養社團自行車",
+          "舉辦多日騎乘活動，帶領社員完成「環島」、「北進武嶺」、「蘇花公路」、「花東縱谷」"
+        ],
+        "link": "https://www.instagram.com/ntu_cycling_club"
+      }
+    ]
   }
 }
