@@ -72,19 +72,22 @@
       {
         "name": "資產管理系統",
         "subtitle": "國立臺灣大學 雲原生應用程式開發",
-        "date": "2026.03 - 現在",
+        "date": "2026.03 - 2026.06",
         "tech": [
           "React",
           "FastAPI",
           "Docker",
-          "Vitest",
           "Git",
-          "Continuous Integration"
+          "AWS",
+          "CI/CD",
+          "Observability",
+          "Test-Driven Development"
         ],
         "description": [
-          "合作開發雲原生資產管理系統，用於管理資產與維修流程",
-          "實作管理員與持有者的角色感知路由及儀表板",
-          "建構支援多國語言 (i18n) 的前端架構"
+          "合作開發高可用性雲原生資產管理系統，優化設備追蹤與維修流程",
+          "使用 Ant Design 開發前端 UI，具備角色存取控制 (RBAC)、多國語言支援 (i18n) 與處理併發編輯的樂觀鎖機制",
+          "建構正式環境 AWS 架構，整合 ECS、負載平衡器、Secrets Manager 與 ECR 映像檔漏洞掃描",
+          "於 CI/CD 流程中自動化資料庫 Schema 遷移，並透過健康檢查與部署審核機制提升運維可靠性"
         ],
         "link": "https://github.com/Joshua0209/Asset-Management-System"
       },
@@ -98,7 +101,7 @@
         ],
         "description": [
           "為電動 SUV 開發完整的 ROS 2 軟體架構，透過 3D 感知、路徑規劃與車輛控制實現角錐跟隨",
-          "整合路徑規劃模組與 Formula Student Driverless 模擬器，在硬體部署前驗證控制與規劃邏輯"
+          "整合路徑規劃模組與 Formula Student Driverless 模擬器，在硬體部署前驗證控制與路徑規劃邏輯"
         ],
         "link": "https://github.com/chueh0000/cone_follower_ws"
       },

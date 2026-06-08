@@ -72,19 +72,22 @@
       {
         "name": "Asset Management System",
         "subtitle": "Cloud Native Application Development, National Taiwan University",
-        "date": "2026.03 - Present",
+        "date": "2026.03 - 2026.06",
         "tech": [
           "React",
           "FastAPI",
           "Docker",
-          "Vitest",
           "Git",
-          "Continuous Integration"
+          "AWS",
+          "CI/CD",
+          "Observability",
+          "Test-Driven Development"
         ],
         "description": [
-          "Collaborated on the development of a cloud-native asset management system for managing assets and maintenance workflows",
-          "Implemented role-aware routing and dashboards for managers and holders",
-          "Architected the frontend for multi-language support (i18n)"
+          "Collaborated on the development of a high availability cloud-native asset management system to streamline equipment tracking and repair workflows",
+          "Built the frontend UI with Ant Design, featuring role-Based access control, multi-language support (i18n), and optimistic locking to handle concurrent edits",
+          "Hardened production AWS infrastructure with ECS, integrating Load Balancer, Secrets Manager, and ECR image vulnerability scanning",
+          "Automated database schema migrations within CI/CD pipelines and enhanced operational reliability using health checks and deployment approval gates"
         ],
         "link": "https://github.com/Joshua0209/Asset-Management-System"
       },
