@@ -30,17 +30,21 @@
     "wnes": {
       "name": "國立臺灣大學 無線網路與嵌入式系統實驗室 (NEWS Lab)",
       "subtitle": "自駕車感知團隊",
-      "date": "2026.02 - 現在",
+      "date": "2026.02 - 2026.07",
       "tech": [
         "NVIDIA Omniverse",
         "NVIDIA Isaac",
         "ROS2",
         "Autoware",
-        "Carla"
+        "Carla",
+        "Open3D",
+        "PDAL",
+        "Unreal Engine"
       ],
       "description": [
-        "研究 NVIDIA Isaac Sim、Visual SLAM 與 Global Localization 技術",
-        "研究 NVIDIA-Carla 整合技術 (SimReady, Nurec, Cosmos Transfer)"
+        "使用 PDAL 處理點雲資料，並於 Open3D 及 Carla (透過 Unreal Engine 插件) 進行點雲渲染",
+        "研究 NVIDIA-Carla 整合技術 (SimReady, Nurec, Cosmos Transfer)",
+        "研究 NVIDIA Isaac Sim、Visual SLAM 與 Global Localization 技術"
       ],
       "link": "https://github.com/NEWSLabNTU"
     }
@@ -94,7 +98,7 @@
       {
         "name": "電動 SUV 角錐跟隨自駕系統",
         "subtitle": "國立臺灣大學 智慧車輛設計與實務",
-        "date": "2026.03 - 現在",
+        "date": "2026.03 - 2026.06",
         "tech": [
           "Python",
           "ROS2"

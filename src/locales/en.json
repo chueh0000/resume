@@ -30,17 +30,21 @@
     "wnes": {
       "name": "Wireless Networking and Embedded Systems Lab, National Taiwan University",
       "subtitle": "Autonomous Vehicles Smart Perception Team",
-      "date": "2026.02 - Present",
+      "date": "2026.02 - 2026.07",
       "tech": [
         "NVIDIA Omniverse",
         "NVIDIA Isaac",
         "ROS2",
         "Autoware",
-        "Carla"
+        "Carla",
+        "Open3D",
+        "PDAL",
+        "Unreal Engine"
       ],
       "description": [
-        "Researched NVIDIA Isaac Sim, Visual SLAM, and Global Localization",
-        "Researched NVIDIA-Carla integration (SimReady, Nurec, Cosmos Transfer)"
+        "Processed point cloud data with PDAL and rendered point clouds in Open3D and Carla using Unreal Engine plugin",
+        "Researched NVIDIA-Carla integration (SimReady, Nurec, Cosmos Transfer)",
+        "Researched NVIDIA Isaac Sim, Visual SLAM, and Global Localization"
       ],
       "link": "https://github.com/NEWSLabNTU"
     }
@@ -94,7 +98,7 @@
       {
         "name": "Autonomous Cone-Following System for Electric SUV",
         "subtitle": "Design and Practice of Intelligent Vehicles, National Taiwan University",
-        "date": "2026.03 - Present",
+        "date": "2026.03 - 2026.06",
         "tech": [
           "Python",
           "ROS2"
